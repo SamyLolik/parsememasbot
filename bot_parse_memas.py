@@ -61,7 +61,7 @@ def get_callback_from_button(bot, update):
 def main():
     """Start the bot."""
     # Create the EventHandler and pass it your bot's token.
-    updater = Updater("СЮДА ВАШ ТОКЕН")
+    updater = Updater("688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk")
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
