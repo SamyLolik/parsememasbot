@@ -1,82 +1,92 @@
-import urllib.request
-from bs4 import BeautifulSoup
 import requests
-import datetime
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
+import logging
 
-url_site = 'http://memasik.ru/?page='
-main_url = 'http://memasik.ru/'
-TELEGRAM_BOT_API = '688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk'
+# Enable logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO)
 
-
-class BotHandler:
-
-    def __init__(self, token):
-        self.token = token
-        self.api_url = "https://api.telegram.org/bot{}/".format(token)
-
-    def get_updates(self, offset=None, timeout=30):
-        method = 'getUpdates'
-        params = {'timeout': timeout, 'offset': offset}
-        resp = requests.get(self.api_url + method, params)
-        result_json = resp.json()['result']
-        return result_json
-
-    def send_message(self, chat_id, text):
-        params = {'chat_id': chat_id, 'text': text}
-        method = 'sendMessage'
-        resp = requests.post(self.api_url + method, params)
-        return resp
-
-    def get_last_update(self):
-        get_result = self.get_updates()
-
-        if len(get_result) > 0:
-            last_update = get_result[-1]
-        else:
-            last_update = get_result[len(get_result)]
-
-        return last_update
+logger = logging.getLogger(__name__)
 
 
-greet_bot = BotHandler(TELEGRAM_BOT_API)
-greetings = ('здравствуй', 'привет', 'ку', 'здорово')
-now = datetime.datetime.now()
+# Define a few command handlers. These usually take the two arguments bot and
+# update. Error handlers also receive the raised TelegramError object in error.
+def start(bot, update):
+    """Приветствие"""
+    update.message.reply_text('Привет, я бот, который очень любит котиков :3\nНапиши мне /cat и я поделюсь ими с тобой')
 
 
+def help(bot, update):
+    """Сообщение для помощи с командами"""
+    update.message.reply_text('Чтобы получить котика напиши /cat')
+
+
+def echo(bot, update):
+    """На любой текст отвечаем ошибкой"""
+    update.message.reply_text("Неизвестная команда :(")
+
+
+def error(bot, update, error):
+    """Log Errors caused by Updates."""
+    logger.warning('Update "%s" caused error "%s"', update, error)
+
+def getcat():
+    '''Получение ссылки на картинку с котиком'''
+    try:
+        r = requests.get('http://thecatapi.com/api/images/get?format=src')
+        url = r.url
+    except:
+        url = get_cat()
+        print('Error with cat parsing')
+        pass
+    return url
+
+def sendcat(bot, update):
+    """Отправка котиков"""
+    bot.sendPhoto(chat_id=update.message.chat_id, photo=getcat(), reply_markup=draw_button())
+def draw_button():
+    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')]]
+    return InlineKeyboardMarkup(inline_keyboard=keys)
+def get_callback_from_button(bot, update):
+    query = update.callback_query
+    username = update.effective_user.username
+    chat_id = query.message.chat.id
+    message_id = query.message.message_id
+    if int(query.data) == 1:
+      bot.sendPhoto(photo=getcat(),
+                          chat_id=chat_id,
+                          message_id=message_id,
+                          reply_markup=draw_button())
 def main():
-    new_offset = None
-    today = now.day
-    hour = now.hour
+    """Start the bot."""
+    # Create the EventHandler and pass it your bot's token.
+    updater = Updater("СЮДА ВАШ ТОКЕН")
 
-    while True:
-        greet_bot.get_updates(new_offset)
+    # Get the dispatcher to register handlers
+    dp = updater.dispatcher
+    dp.add_handler(CallbackQueryHandler(get_callback_from_button))
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("cat", sendcat))
 
-        last_update = greet_bot.get_last_update()
+    # on noncommand i.e message - echo the message on Telegram
+    dp.add_handler(MessageHandler(Filters.text, echo))
 
-        last_update_id = last_update['update_id']
-        last_chat_text = last_update['message']['text']
-        last_chat_id = last_update['message']['chat']['id']
-        last_chat_name = last_update['message']['chat']['first_name']
+    # log all errors
+    dp.add_error_handler(error)
 
-        if last_chat_text.lower() in greetings and today == now.day and 6 <= hour < 12:
-            greet_bot.send_message(last_chat_id, 'Доброе утро, {}'.format(last_chat_name))
-            today += 1
+    # Start the Bot
+    updater.start_polling()
 
-        elif last_chat_text.lower() in greetings and today == now.day and 12 <= hour < 17:
-            greet_bot.send_message(last_chat_id, 'Добрый день, {}'.format(last_chat_name))
-            today += 1
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
+    # SIGTERM or SIGABRT. This should be used most of the time, since
+    # start_polling() is non-blocking and will stop the bot gracefully.
+    updater.idle()
 
-        elif last_chat_text.lower() in greetings and today == now.day and 17 <= hour < 23:
-            greet_bot.send_message(last_chat_id, 'Добрый вечер, {}'.format(last_chat_name))
-            today += 1
-
-        new_offset = last_update_id + 1
 
 if __name__ == '__main__':
-    try:
-        main()
-    except KeyboardInterrupt:
-        exit()
+    main()
 
 
 def get_html(url):
