@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac5888b0-d437-4c1a-baff-0aa1ca693dec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot_parse_memas.py" afterPath="$PROJECT_DIR$/bot_parse_memas.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#430#507#0" expanded="false" />
@@ -27,6 +27,16 @@
                 <marker date="1532684578557" expanded="false" signature="1001:1099" ph="..." />
                 <marker date="1532684578557" expanded="false" signature="1132:1239" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,6 +50,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bot_parse_memas.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -243,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532684307434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил функции для поста собачек (правочки)">
+      <created>1532684594389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532684594389</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -280,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ДОбавил функции для поста собачек" />
     <MESSAGE value="Добавил функции для поста собачек" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил функции для поста собачек" />
+    <MESSAGE value="Добавил функции для поста собачек (правочки)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил функции для поста собачек (правочки)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -290,7 +309,7 @@
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#430#507#0" expanded="false" />
@@ -299,6 +318,14 @@
             <marker date="1532684578557" expanded="false" signature="1001:1099" ph="..." />
             <marker date="1532684578557" expanded="false" signature="1132:1239" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
