@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 # update. Error handlers also receive the raised TelegramError object in error.
 def start(bot, update):
     """Приветствие"""
-    update.message.reply_text('Привет, я бот, который очень любит котиков :3\nНапиши мне /cat и я поделюсь ими с тобой')
+    update.message.reply_text('Привет, я бот, который очень любит мемесы, но пока умею кидать только котиков :3\nНапиши мне /cat и я поделюсь ими с тобой')
 
 
 def help(bot, update):
@@ -44,9 +44,26 @@ def getcat():
     return url
 
 
+def getdog():
+    '''Получение ссылки на gif с собачкой'''
+    try:
+        r = requests.get('https://api.thedogapi.com/v1/images/search?format=src&mime_types=image/gif')
+        url = r.url
+    except:
+        url = 'default_cat.jpg'
+        print('Error with dog parsing')
+        pass
+    return url
+
+
 def sendcat(bot, update):
     """Отправка котиков"""
     bot.sendPhoto(chat_id=update.message.chat_id, photo=getcat(), reply_markup=draw_button())
+
+
+def senddog(bot, update):
+    """Отправка котиков"""
+    bot.sendPhoto(chat_id=update.message.chat_id, photo=getdog(), reply_markup=draw_button())
 
 
 def draw_button():
