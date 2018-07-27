@@ -2,7 +2,7 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 import logging
-
+import random
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -67,8 +67,35 @@ def senddog(bot, update):
     bot.sendMessage(chat_id=update.message.chat_id, text='Собакен', reply_markup=draw_button())
 
 
+def send_memas(bot, update):
+    data = parse_2ch()
+    if data['type'] == 'photo':
+        bot.sendPhoto(photo=data['url'], chat_id=update.message.chat_id, reply_markup=draw_button())
+    elif data['type'] == 'video':
+        bot.sendVideo(video=data['url'], chat_id=update.message.chat_id, reply_markup=draw_button())
+
+
+def parse_2ch():
+    rand = random.randint(1, 10)
+    data = {}
+    r = requests.get('https://2ch.hk/b/{}.json'.format(rand)).json()
+    for posts in r['threads']:
+        for files in posts['posts']:
+            for path in files['files']:
+                #print(path['path'])
+                if path['path'].endswith('jpg') or path['path'].endswith('png'):
+                    data = {'url': 'https://2ch.hk{}'.format(path['path']), 'type': 'photo'}
+                    break
+                elif path['path'].endswith('mp4') or path['path'].endswith('webm'):
+                    data = {'url': 'https://2ch.hk{}'.format(path['path']), 'type': 'video'}
+                    break
+    return data
+
+
 def draw_button():
-    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')], [InlineKeyboardButton('Скоро мемес (а пока собакен)', callback_data='2')]]
+    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')],
+           [InlineKeyboardButton('Еще собакенов?', callback_data='2')],
+           [InlineKeyboardButton('Рандомный мемасик?', callback_data='3')]]
     return InlineKeyboardMarkup(inline_keyboard=keys)
 
 
@@ -84,6 +111,12 @@ def get_callback_from_button(bot, update):
             'https://api.telegram.org/bot688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk/sendAnimation?animation={}&chat_id={}'.format(
                 getdog(), chat_id))
         bot.sendMessage(chat_id=chat_id, text='Собакен', reply_markup=draw_button())
+    elif int(query.data) == 3:
+        data = parse_2ch()
+        if data['type'] == 'photo':
+            bot.sendPhoto(photo=data['url'], chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
+        elif data['type'] == 'video':
+            bot.sendVideo(video=data['url'], chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
 
 
 def main():
@@ -98,6 +131,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("cat", sendcat))
     dp.add_handler(CommandHandler("dog", senddog))
+    dp.add_handler(CommandHandler("memas", send_memas))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
