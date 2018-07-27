@@ -67,7 +67,7 @@ def senddog(bot, update):
 
 
 def draw_button():
-    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')]]
+    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')], [InlineKeyboardButton('Скоро мемес', callback_data='2')]]
     return InlineKeyboardMarkup(inline_keyboard=keys)
 
 
