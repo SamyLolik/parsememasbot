@@ -34,8 +34,8 @@
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532684777468</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new requirements">
+      <created>1532685226417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532685226417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -306,7 +313,8 @@
     <MESSAGE value="ДОбавил функции для поста собачек" />
     <MESSAGE value="Добавил функции для поста собачек" />
     <MESSAGE value="Добавил функции для поста собачек (правочки)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил функции для поста собачек (правочки)" />
+    <MESSAGE value="new requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="new requirements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -330,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
