@@ -17,17 +17,15 @@
       <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="83" column="53" lean-forward="true" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+            <state relative-caret-position="340">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#430#507#0" expanded="false" />
-                <element signature="e#1839#1955#0" expanded="false" />
-                <element signature="e#2386#2750#0" expanded="false" />
-                <marker date="1532684034866" expanded="false" signature="847:957" ph="..." />
-                <marker date="1532684034866" expanded="false" signature="982:1080" ph="..." />
-                <marker date="1532684034866" expanded="false" signature="1113:1220" ph="..." />
-                <marker date="1532684034866" expanded="false" signature="2764:3670" ph="..." />
+                <element signature="e#1858#1974#0" expanded="false" />
+                <marker date="1532684244024" expanded="false" signature="866:976" ph="..." />
+                <marker date="1532684244024" expanded="false" signature="1001:1099" ph="..." />
+                <marker date="1532684244024" expanded="false" signature="1132:1239" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532683927465</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил функции для поста собачек">
+      <created>1532684061765</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532684061765</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -267,7 +272,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ДОбавил функции для поста собачек" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДОбавил функции для поста собачек" />
+    <MESSAGE value="Добавил функции для поста собачек" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил функции для поста собачек" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -276,17 +282,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="83" column="53" lean-forward="true" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+        <state relative-caret-position="340">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#430#507#0" expanded="false" />
-            <element signature="e#1839#1955#0" expanded="false" />
-            <element signature="e#2386#2750#0" expanded="false" />
-            <marker date="1532684034866" expanded="false" signature="847:957" ph="..." />
-            <marker date="1532684034866" expanded="false" signature="982:1080" ph="..." />
-            <marker date="1532684034866" expanded="false" signature="1113:1220" ph="..." />
-            <marker date="1532684034866" expanded="false" signature="2764:3670" ph="..." />
+            <element signature="e#1858#1974#0" expanded="false" />
+            <marker date="1532684244024" expanded="false" signature="866:976" ph="..." />
+            <marker date="1532684244024" expanded="false" signature="1001:1099" ph="..." />
+            <marker date="1532684244024" expanded="false" signature="1132:1239" ph="..." />
           </folding>
         </state>
       </provider>

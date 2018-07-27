@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 # update. Error handlers also receive the raised TelegramError object in error.
 def start(bot, update):
     """Приветствие"""
-    update.message.reply_text('Привет, я бот, который очень любит мемесы, но пока умею кидать только котиков :3\n'
-                              'Напиши мне /cat и я поделюсь ими с тобой')
+    update.message.reply_text('Привет, я бот, который очень любит мемесы, но пока умею кидать только котиков и собачек :3\n'
+                              'Напиши мне /cat или /dog и я поделюсь ими с тобой')
 
 
 def help(bot, update):
@@ -82,6 +82,8 @@ def get_callback_from_button(bot, update):
                           chat_id=chat_id,
                           message_id=message_id,
                           reply_markup=draw_button())
+    elif int(query.data) == 2:
+        bot.sendAnimation(chat_id=update.message.chat_id, animation=getdog(), reply_markup=draw_button())
 
 
 def main():
@@ -95,6 +97,7 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("cat", sendcat))
+    dp.add_handler(CommandHandler("dog", senddog))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
