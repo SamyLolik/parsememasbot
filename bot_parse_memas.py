@@ -76,7 +76,7 @@ def send_memas(bot, update):
 
 
 def parse_2ch():
-    rand = random.randint(1, 10)
+    rand = random.randint(1, 9)
     data = {}
     r = requests.get('https://2ch.hk/b/{}.json'.format(rand)).json()
     for posts in r['threads']:

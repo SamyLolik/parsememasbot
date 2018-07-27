@@ -20,8 +20,8 @@
       <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="74" column="100" lean-forward="true" selection-start-line="74" selection-start-column="100" selection-end-line="74" selection-end-column="100" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#443#520#0" expanded="false" />
@@ -30,12 +30,12 @@
                 <element signature="e#1746#1862#0" expanded="false" />
                 <element signature="e#1895#2182#0" expanded="false" />
                 <element signature="e#2218#2504#0" expanded="false" />
-                <element signature="e#3290#3561#0" expanded="false" />
-                <element signature="e#3611#4565#0" expanded="false" />
-                <element signature="e#4584#5592#0" expanded="false" />
-                <marker date="1532703232192" expanded="false" signature="754:864" ph="..." />
-                <marker date="1532703232192" expanded="false" signature="889:987" ph="..." />
-                <marker date="1532703232192" expanded="false" signature="1020:1127" ph="..." />
+                <element signature="e#3289#3560#0" expanded="false" />
+                <element signature="e#3610#4564#0" expanded="false" />
+                <element signature="e#4583#5591#0" expanded="false" />
+                <marker date="1532703634059" expanded="false" signature="754:864" ph="..." />
+                <marker date="1532703634059" expanded="false" signature="889:987" ph="..." />
+                <marker date="1532703634059" expanded="false" signature="1020:1127" ph="..." />
               </folding>
             </state>
           </provider>
@@ -397,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532702804516</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Новый рандом">
+      <created>1532703241035</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532703241035</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -482,8 +489,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="74" column="100" lean-forward="true" selection-start-line="74" selection-start-column="100" selection-end-line="74" selection-end-column="100" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#443#520#0" expanded="false" />
@@ -492,12 +499,12 @@
             <element signature="e#1746#1862#0" expanded="false" />
             <element signature="e#1895#2182#0" expanded="false" />
             <element signature="e#2218#2504#0" expanded="false" />
-            <element signature="e#3290#3561#0" expanded="false" />
-            <element signature="e#3611#4565#0" expanded="false" />
-            <element signature="e#4584#5592#0" expanded="false" />
-            <marker date="1532703232192" expanded="false" signature="754:864" ph="..." />
-            <marker date="1532703232192" expanded="false" signature="889:987" ph="..." />
-            <marker date="1532703232192" expanded="false" signature="1020:1127" ph="..." />
+            <element signature="e#3289#3560#0" expanded="false" />
+            <element signature="e#3610#4564#0" expanded="false" />
+            <element signature="e#4583#5591#0" expanded="false" />
+            <marker date="1532703634059" expanded="false" signature="754:864" ph="..." />
+            <marker date="1532703634059" expanded="false" signature="889:987" ph="..." />
+            <marker date="1532703634059" expanded="false" signature="1020:1127" ph="..." />
           </folding>
         </state>
       </provider>
