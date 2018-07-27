@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 # update. Error handlers also receive the raised TelegramError object in error.
 def start(bot, update):
     """Приветствие"""
-    update.message.reply_text('Привет, я бот, который очень любит котиков :3\nНапиши мне /cat и я поделюсь ими с тобой')
+    update.message.reply_text('Привет, я бот, который очень любит мемесы, но пока умею кидать только котиков :3\nНапиши мне /cat и я поделюсь ими с тобой')
 
 
 def help(bot, update):
