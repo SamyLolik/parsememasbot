@@ -76,13 +76,14 @@ def send_memas(bot, update):
 
 
 def parse_2ch():
-    rand = random.randint(1, 10)
+    rand = random.randint(1, 100)
     data = {}
     r = requests.get('https://2ch.hk/b/{}.json'.format(rand)).json()
     for posts in r['threads']:
-        for files in posts['posts']:
-            for path in files['files']:
-                #print(path['path'])
+        for files in posts['posts'].shuffle:
+            files = files['files']
+            random.shuffle(files)
+            for path in files:
                 if path['path'].endswith('jpg') or path['path'].endswith('png'):
                     data = {'url': 'https://2ch.hk{}'.format(path['path']), 'type': 'photo'}
                     break

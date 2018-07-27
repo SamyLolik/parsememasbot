@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac5888b0-d437-4c1a-baff-0aa1ca693dec" name="Default" comment="">
+    <list default="true" id="ac5888b0-d437-4c1a-baff-0aa1ca693dec" name="Default" comment="увеличил кол-во станиц">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot_parse_memas.py" afterPath="$PROJECT_DIR$/bot_parse_memas.py" />
     </list>
@@ -13,15 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/parsememasbot$test.coverage" NAME="test Coverage Results" MODIFIED="1532696767302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/parsememasbot$test.coverage" NAME="test Coverage Results" MODIFIED="1532702740434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
+            <state relative-caret-position="203">
+              <caret line="66" column="95" lean-forward="true" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#443#520#0" expanded="false" />
@@ -30,13 +30,12 @@
                 <element signature="e#1746#1862#0" expanded="false" />
                 <element signature="e#1895#2182#0" expanded="false" />
                 <element signature="e#2218#2504#0" expanded="false" />
-                <element signature="e#2528#3203#0" expanded="false" />
-                <element signature="e#3229#3500#0" expanded="false" />
-                <element signature="e#3550#4504#0" expanded="false" />
-                <element signature="e#4523#5531#0" expanded="false" />
-                <marker date="1532697563298" expanded="false" signature="754:864" ph="..." />
-                <marker date="1532697563298" expanded="false" signature="889:987" ph="..." />
-                <marker date="1532697563298" expanded="false" signature="1020:1127" ph="..." />
+                <element signature="e#3261#3532#0" expanded="false" />
+                <element signature="e#3582#4536#0" expanded="false" />
+                <element signature="e#4555#5563#0" expanded="false" />
+                <marker date="1532702789239" expanded="false" signature="754:864" ph="..." />
+                <marker date="1532702789239" expanded="false" signature="889:987" ph="..." />
+                <marker date="1532702789239" expanded="false" signature="1020:1127" ph="..." />
               </folding>
             </state>
           </provider>
@@ -45,8 +44,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="153">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -70,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -96,9 +95,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/bot_parse_memas.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -147,6 +146,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -383,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532691627620</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Дабавил первичный тупой поиск чего нибудь из 2ch">
+      <created>1532697745499</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532697745499</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -394,11 +401,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -423,7 +430,8 @@
     <MESSAGE value="Добавил функции для поста собачек (правочки)" />
     <MESSAGE value="new requirements" />
     <MESSAGE value="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов" />
+    <MESSAGE value="Дабавил первичный тупой поиск чего нибудь из 2ch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дабавил первичный тупой поиск чего нибудь из 2ch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -446,10 +454,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="10" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -458,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
+        <state relative-caret-position="203">
+          <caret line="66" column="95" lean-forward="true" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#443#520#0" expanded="false" />
@@ -468,22 +484,13 @@
             <element signature="e#1746#1862#0" expanded="false" />
             <element signature="e#1895#2182#0" expanded="false" />
             <element signature="e#2218#2504#0" expanded="false" />
-            <element signature="e#2528#3203#0" expanded="false" />
-            <element signature="e#3229#3500#0" expanded="false" />
-            <element signature="e#3550#4504#0" expanded="false" />
-            <element signature="e#4523#5531#0" expanded="false" />
-            <marker date="1532697563298" expanded="false" signature="754:864" ph="..." />
-            <marker date="1532697563298" expanded="false" signature="889:987" ph="..." />
-            <marker date="1532697563298" expanded="false" signature="1020:1127" ph="..." />
+            <element signature="e#3261#3532#0" expanded="false" />
+            <element signature="e#3582#4536#0" expanded="false" />
+            <element signature="e#4555#5563#0" expanded="false" />
+            <marker date="1532702789239" expanded="false" signature="754:864" ph="..." />
+            <marker date="1532702789239" expanded="false" signature="889:987" ph="..." />
+            <marker date="1532702789239" expanded="false" signature="1020:1127" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
