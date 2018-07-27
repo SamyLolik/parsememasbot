@@ -20,16 +20,15 @@
       <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+            <state relative-caret-position="156">
+              <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#430#507#0" expanded="false" />
-                <element signature="e#2195#2393#0" expanded="false" />
-                <element signature="e#2443#2876#0" expanded="false" />
-                <marker date="1532686762421" expanded="false" signature="741:851" ph="..." />
-                <marker date="1532686762421" expanded="false" signature="876:974" ph="..." />
-                <marker date="1532686762421" expanded="false" signature="1007:1114" ph="..." />
+                <element signature="e#2179#2377#0" expanded="false" />
+                <marker date="1532687012696" expanded="false" signature="741:851" ph="..." />
+                <marker date="1532687012696" expanded="false" signature="876:974" ph="..." />
+                <marker date="1532687012696" expanded="false" signature="1007:1114" ph="..." />
               </folding>
             </state>
           </provider>
@@ -319,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532685305350</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов">
+      <created>1532686837506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532686837506</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -358,7 +364,8 @@
     <MESSAGE value="Добавил функции для поста собачек" />
     <MESSAGE value="Добавил функции для поста собачек (правочки)" />
     <MESSAGE value="new requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="new requirements" />
+    <MESSAGE value="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -383,16 +390,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="156">
+          <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#430#507#0" expanded="false" />
-            <element signature="e#2195#2393#0" expanded="false" />
-            <element signature="e#2443#2876#0" expanded="false" />
-            <marker date="1532686762421" expanded="false" signature="741:851" ph="..." />
-            <marker date="1532686762421" expanded="false" signature="876:974" ph="..." />
-            <marker date="1532686762421" expanded="false" signature="1007:1114" ph="..." />
+            <element signature="e#2179#2377#0" expanded="false" />
+            <marker date="1532687012696" expanded="false" signature="741:851" ph="..." />
+            <marker date="1532687012696" expanded="false" signature="876:974" ph="..." />
+            <marker date="1532687012696" expanded="false" signature="1007:1114" ph="..." />
           </folding>
         </state>
       </provider>
