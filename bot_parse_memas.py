@@ -64,11 +64,11 @@ def sendcat(bot, update):
 
 def senddog(bot, update):
     """Отправка котиков"""
-    bot.sendPhoto(chat_id=update.message.chat_id, photo=getdog(), reply_markup=draw_button())
+    bot.sendAnimation(chat_id=update.message.chat_id, animation=getdog(), reply_markup=draw_button())
 
 
 def draw_button():
-    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')], [InlineKeyboardButton('Скоро мемес', callback_data='2')]]
+    keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')], [InlineKeyboardButton('Скоро мемес (а пока собакен)', callback_data='2')]]
     return InlineKeyboardMarkup(inline_keyboard=keys)
 
 
