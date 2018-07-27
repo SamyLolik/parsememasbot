@@ -14,8 +14,7 @@ logger = logging.getLogger(__name__)
 # update. Error handlers also receive the raised TelegramError object in error.
 def start(bot, update):
     """Приветствие"""
-    update.message.reply_text('Привет, я бот, который очень любит мемесы, но пока умею кидать только котиков и собачек :3\n'
-                              'Напиши мне /cat или /dog и я поделюсь ими с тобой')
+    update.message.reply_text('Напиши мне /cat или /dog и я поделюсь ими с тобой')
 
 
 def help(bot, update):
@@ -63,8 +62,9 @@ def sendcat(bot, update):
 
 
 def senddog(bot, update):
-    """Отправка котиков"""
-    bot.sendAnimation(chat_id=update.message.chat_id, animation=getdog(), reply_markup=draw_button())
+    """Отправка псин"""
+    requests.get('https://api.telegram.org/bot688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk/sendAnimation?animation={}&chat_id={}'.format(getdog(),update.message.chat_id))
+    bot.sendMessage(chat_id=update.message.chat_id, text='Собакен', reply_markup=draw_button())
 
 
 def draw_button():
@@ -80,7 +80,7 @@ def get_callback_from_button(bot, update):
     if int(query.data) == 1:
         bot.sendPhoto(photo=getcat(), chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
     elif int(query.data) == 2:
-        bot.sendAnimation(chat_id=chat_id, animation=getdog(), message_id=message_id, reply_markup=draw_button())
+        bot.sendAnimation(animation=getdog(), chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
 
 
 def main():
