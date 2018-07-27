@@ -31,23 +31,29 @@ def error(bot, update, error):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, error)
 
+
 def getcat():
     '''Получение ссылки на картинку с котиком'''
     try:
         r = requests.get('http://thecatapi.com/api/images/get?format=src')
         url = r.url
     except:
-        url = get_cat()
+        url = 'default_cat.jpg'
         print('Error with cat parsing')
         pass
     return url
 
+
 def sendcat(bot, update):
     """Отправка котиков"""
     bot.sendPhoto(chat_id=update.message.chat_id, photo=getcat(), reply_markup=draw_button())
+
+
 def draw_button():
     keys =[[InlineKeyboardButton('🐈Еще котика?!🐈', callback_data='1')]]
     return InlineKeyboardMarkup(inline_keyboard=keys)
+
+
 def get_callback_from_button(bot, update):
     query = update.callback_query
     username = update.effective_user.username
@@ -58,6 +64,8 @@ def get_callback_from_button(bot, update):
                           chat_id=chat_id,
                           message_id=message_id,
                           reply_markup=draw_button())
+
+
 def main():
     """Start the bot."""
     # Create the EventHandler and pass it your bot's token.
@@ -87,22 +95,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-def get_html(url):
-    response = urllib.request.urlopen(url)
-    return response.read()
-
-
-def parser_links(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    content = soup.find('div', class_='org_list')
-    href = []
-    try:
-        for p in content.find_all('p'):
-            for link in p.findAll('a'):
-                href.append(link["href"])
-    except:
-        href = 0
-    return href
-
