@@ -78,12 +78,9 @@ def get_callback_from_button(bot, update):
     chat_id = query.message.chat.id
     message_id = query.message.message_id
     if int(query.data) == 1:
-      bot.sendPhoto(photo=getcat(),
-                          chat_id=chat_id,
-                          message_id=message_id,
-                          reply_markup=draw_button())
+        bot.sendPhoto(photo=getcat(), chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
     elif int(query.data) == 2:
-        bot.sendAnimation(chat_id=update.message.chat_id, animation=getdog(), reply_markup=draw_button())
+        bot.sendAnimation(chat_id=chat_id, animation=getdog(), message_id=message_id, reply_markup=draw_button())
 
 
 def main():
