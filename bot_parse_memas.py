@@ -64,7 +64,7 @@ def sendcat(bot, update):
 def senddog(bot, update):
     """Отправка псин"""
     requests.get('https://api.telegram.org/bot688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk/sendAnimation?animation={}&chat_id={}'.format(getdog(),update.message.chat_id))
-    bot.sendMessage(chat_id=update.message.chat_id, reply_markup=draw_button())
+    bot.sendMessage(chat_id=update.message.chat_id, text='Собакен', reply_markup=draw_button())
 
 
 def draw_button():
@@ -83,7 +83,7 @@ def get_callback_from_button(bot, update):
         requests.get(
             'https://api.telegram.org/bot688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk/sendAnimation?animation={}&chat_id={}'.format(
                 getdog(), update.message.chat_id))
-        bot.sendMessage(chat_id=chat_id, reply_markup=draw_button())
+        bot.sendMessage(chat_id=chat_id, text='Собакен', reply_markup=draw_button())
 
 
 def main():
