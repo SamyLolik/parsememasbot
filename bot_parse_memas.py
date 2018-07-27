@@ -82,7 +82,7 @@ def get_callback_from_button(bot, update):
     elif int(query.data) == 2:
         requests.get(
             'https://api.telegram.org/bot688587980:AAEq-SxRkJ-xd_qOgOeqdumdO39VLA8kISk/sendAnimation?animation={}&chat_id={}'.format(
-                getdog(), update.message.chat_id))
+                getdog(), chat_id))
         bot.sendMessage(chat_id=chat_id, text='Собакен', reply_markup=draw_button())
 
 
