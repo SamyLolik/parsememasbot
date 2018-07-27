@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac5888b0-d437-4c1a-baff-0aa1ca693dec" name="Default" comment="увеличил кол-во станиц">
+    <list default="true" id="ac5888b0-d437-4c1a-baff-0aa1ca693dec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot_parse_memas.py" afterPath="$PROJECT_DIR$/bot_parse_memas.py" />
     </list>
@@ -13,15 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/parsememasbot$test.coverage" NAME="test Coverage Results" MODIFIED="1532702740434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/parsememasbot$test.coverage" NAME="test Coverage Results" MODIFIED="1532703114571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="bot_parse_memas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="66" column="95" lean-forward="true" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
+            <state relative-caret-position="519">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#443#520#0" expanded="false" />
@@ -30,12 +30,12 @@
                 <element signature="e#1746#1862#0" expanded="false" />
                 <element signature="e#1895#2182#0" expanded="false" />
                 <element signature="e#2218#2504#0" expanded="false" />
-                <element signature="e#3261#3532#0" expanded="false" />
-                <element signature="e#3582#4536#0" expanded="false" />
-                <element signature="e#4555#5563#0" expanded="false" />
-                <marker date="1532702789239" expanded="false" signature="754:864" ph="..." />
-                <marker date="1532702789239" expanded="false" signature="889:987" ph="..." />
-                <marker date="1532702789239" expanded="false" signature="1020:1127" ph="..." />
+                <element signature="e#3290#3561#0" expanded="false" />
+                <element signature="e#3611#4565#0" expanded="false" />
+                <element signature="e#4584#5592#0" expanded="false" />
+                <marker date="1532703232192" expanded="false" signature="754:864" ph="..." />
+                <marker date="1532703232192" expanded="false" signature="889:987" ph="..." />
+                <marker date="1532703232192" expanded="false" signature="1020:1127" ph="..." />
               </folding>
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="15" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -390,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532697745499</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Новый рандом">
+      <created>1532702804516</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532702804516</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -431,7 +438,8 @@
     <MESSAGE value="new requirements" />
     <MESSAGE value="Так как нет еще метода sendAnimation в библиотеке telebot.ext добавил по ссылке собакенов" />
     <MESSAGE value="Дабавил первичный тупой поиск чего нибудь из 2ch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дабавил первичный тупой поиск чего нибудь из 2ch" />
+    <MESSAGE value="Новый рандом" />
+    <option name="LAST_COMMIT_MESSAGE" value="Новый рандом" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -464,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="15" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -474,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot_parse_memas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="66" column="95" lean-forward="true" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
+        <state relative-caret-position="519">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#443#520#0" expanded="false" />
@@ -484,12 +492,12 @@
             <element signature="e#1746#1862#0" expanded="false" />
             <element signature="e#1895#2182#0" expanded="false" />
             <element signature="e#2218#2504#0" expanded="false" />
-            <element signature="e#3261#3532#0" expanded="false" />
-            <element signature="e#3582#4536#0" expanded="false" />
-            <element signature="e#4555#5563#0" expanded="false" />
-            <marker date="1532702789239" expanded="false" signature="754:864" ph="..." />
-            <marker date="1532702789239" expanded="false" signature="889:987" ph="..." />
-            <marker date="1532702789239" expanded="false" signature="1020:1127" ph="..." />
+            <element signature="e#3290#3561#0" expanded="false" />
+            <element signature="e#3611#4565#0" expanded="false" />
+            <element signature="e#4584#5592#0" expanded="false" />
+            <marker date="1532703232192" expanded="false" signature="754:864" ph="..." />
+            <marker date="1532703232192" expanded="false" signature="889:987" ph="..." />
+            <marker date="1532703232192" expanded="false" signature="1020:1127" ph="..." />
           </folding>
         </state>
       </provider>
