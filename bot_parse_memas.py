@@ -121,7 +121,8 @@ def get_callback_from_button(bot, update):
             bot.sendVideo(video=data['url'], chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
 
 
-def send_pidr(bot, update):'''пидр функция'''
+def send_pidr(bot, update):
+    '''пидр функция'''
     users = ['303280312', '414342044', '327884751']
     new_updates = bot.getChatMember(chat_id=update.message.chat_id, user_id=random.choice(users))
     name = new_updates['result']['user']['first_name']
