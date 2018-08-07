@@ -121,6 +121,13 @@ def get_callback_from_button(bot, update):
             bot.sendVideo(video=data['url'], chat_id=chat_id, message_id=message_id, reply_markup=draw_button())
 
 
+def send_pidr(bot, update):
+    users = ['303280312', '414342044', '327884751']
+    new_updates = bot.getChatMember(chat_id=update.message.chat_id, user_id=random.choice(users))
+    name = new_updates.result.user.first_name
+    bot.sendMessage(chat_id=update.message.chat_id, text='Сейчас пидр у нас {}'.format(name))
+
+
 def main():
     """Start the bot."""
     # Create the EventHandler and pass it your bot's token.
@@ -134,6 +141,7 @@ def main():
     dp.add_handler(CommandHandler("cat", sendcat))
     dp.add_handler(CommandHandler("dog", senddog))
     dp.add_handler(CommandHandler("memas", send_memas))
+    dp.add_handler(CommandHandler("пидр", send_pidr))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
