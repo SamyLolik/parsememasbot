@@ -126,7 +126,7 @@ def send_pidr(bot, update):
     users = ['303280312', '414342044', '327884751']
     new_updates = bot.getChatMember(chat_id=update.message.chat_id, user_id=random.choice(users))
     print(new_updates)
-    name = new_updates['result']['user']['first_name']
+    name = new_updates['user']['first_name']
     bot.sendMessage(chat_id=update.message.chat_id, text='Сейчас пидр у нас {}'.format(name))
 
 
